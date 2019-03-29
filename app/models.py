@@ -9,8 +9,4 @@ class Tweet:
 class TweetStore:
 
 	def __init__(self, tweets: list = []):
-		"""
-
-		:type tweets: list
-		"""
 		self.tweets = tweets
