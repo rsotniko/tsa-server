@@ -11,6 +11,8 @@ model = tf.keras.models.Sequential([
 	tf.keras.layers.Dropout(0.2),
 	tf.keras.layers.Dense(10, activation=tf.nn.softmax)
 ])
+model.summary()
+
 model.compile(
 	optimizer='adam',
 	loss='sparse_categorical_crossentropy',
@@ -18,3 +20,7 @@ model.compile(
 
 model.fit(x_train, y_train, epochs=5)
 model.evaluate(x_test, y_test)
+model.save('./tsa.h5')
+
+new_model = tf.keras.models.load_model('./tsa.h5')
+new_model.predict(x_test)
