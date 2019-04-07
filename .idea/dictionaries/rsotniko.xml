@@ -1,9 +1,11 @@
 <component name="ProjectDictionaryState">
   <dictionary name="rsotniko">
     <words>
+      <w>creds</w>
       <w>crossentropy</w>
       <w>keras</w>
       <w>mnist</w>
+      <w>twython</w>
     </words>
   </dictionary>
 </component>
