@@ -1,0 +1,40 @@
+<application>
+  <component name="PropertiesComponent">
+    <property name="CommitChangeListDialog.DETAILS_SPLITTER_PROPORTION_2" value="0.64295876" />
+    <property name="Copy.OpenInEditor" value="true" />
+    <property name="ExpandBeforeRunStepsPanel" value="true" />
+    <property name="ExpandRunDashboardTypesPanel" value="false" />
+    <property name="PACKAGE_FILTER" value="pandas&#10;twython&#10;tensorflow&#10;flask" />
+    <property name="PyCharm.InitialConfiguration" value="true" />
+    <property name="PyCharm.InitialConfiguration.V2" value="true" />
+    <property name="PyCharm.InitialConfiguration.V3" value="true" />
+    <property name="PyCharm.InitialConfiguration.V4" value="true" />
+    <property name="PyCharm.InitialConfiguration.V5" value="true" />
+    <property name="PyCharm.InitialConfiguration.V6" value="true" />
+    <property name="PyCharm.InitialConfiguration.V7" value="true" />
+    <property name="PyCharm.initialConfigurationShown" value="true" />
+    <property name="SettingsSearchHistory" value="tab size&#10;proxy&#10;git" />
+    <property name="file.chooser.recent.files" value="$USER_HOME$/PycharmProjects/tsa-server/venv/Scripts&#10;C:/Users/rsotniko/PycharmProjects/tsa" />
+    <property name="file.gist.reindex.count" value="8485" />
+    <property name="fileTypeChangedCounter" value="1" />
+    <property name="lastTip" value="2" />
+  </component>
+  <component name="PyTestFrameworkService">
+    <option name="SDK_TO_PYTEST">
+      <map>
+        <entry key="C:\Users\rsotniko\PycharmProjects\tsa-server\venv\Scripts\python.exe" value="false" />
+        <entry key="C:\Users\rsotniko\PycharmProjects\tsa\venv\Scripts\python.exe" value="false" />
+      </map>
+    </option>
+    <option name="SDK_TO_NOSETEST">
+      <map>
+        <entry key="C:\Users\rsotniko\PycharmProjects\tsa\venv\Scripts\python.exe" value="false" />
+      </map>
+    </option>
+    <option name="SDK_TO_TRIALTEST">
+      <map>
+        <entry key="C:\Users\rsotniko\PycharmProjects\tsa\venv\Scripts\python.exe" value="false" />
+      </map>
+    </option>
+  </component>
+</application>
