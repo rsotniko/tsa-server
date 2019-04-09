@@ -1,0 +1,152 @@
+---
+swagger: "2.0"
+info:
+  description: "No description"
+  version: "1.0.0"
+  title: "TSA Backend API"
+  contact: {}
+host: "localhost:5000"
+schemes:
+- "http"
+consumes:
+- "application/json"
+produces:
+- "application/json"
+paths:
+  /tweets:
+    get:
+      summary: "Get tweets to be analyzed"
+      parameters: []
+      responses:
+        200:
+          description: "Status 200"
+          schema:
+            $ref: "#/definitions/Tweet"
+        400:
+          description: "Status 400"
+        404:
+          description: "Status 404"
+    post:
+      summary: "Add tweets to be analyzed"
+      consumes: []
+      parameters:
+      - name: "body"
+        in: "body"
+        required: true
+        schema:
+          type: "array"
+          items:
+            $ref: "#/definitions/Tweet"
+      responses:
+        200:
+          description: "Status 200"
+        400:
+          description: "Status 400"
+  /keras/summary:
+    get:
+      parameters: []
+      responses:
+        200:
+          description: "Status 200"
+          schema:
+            type: "object"
+  /predictions/data:
+    post:
+      summary: "Carry on sentimental analysis for tweets"
+      consumes: []
+      parameters:
+      - name: "body"
+        in: "body"
+        required: true
+        schema:
+          type: "array"
+          items:
+            $ref: "#/definitions/Tweet"
+      responses:
+        200:
+          description: "Status 200"
+          schema:
+            required:
+            - "requestId"
+            type: "object"
+            properties:
+              requestId:
+                type: "string"
+  /predictions/{requestId}:
+    get:
+      parameters: []
+      responses:
+        200:
+          description: "Status 200"
+          schema:
+            type: "array"
+            items:
+              $ref: "#/definitions/Prediction"
+    parameters:
+    - name: "requestId"
+      in: "path"
+      required: true
+      type: "string"
+  /realTweets:
+    get:
+      summary: "Search for tweets using the Twitter API"
+      parameters:
+      - name: "keywords"
+        in: "query"
+        required: true
+        type: "string"
+        description: "A comma-separated list of key words"
+        x-example: "tensorflow,keras"
+      - name: "author"
+        in: "query"
+        required: false
+        type: "string"
+        description: "The Twitter user name of the author"
+        x-example: "rsotniko"
+      - name: "from"
+        in: "query"
+        required: false
+        type: "string"
+        description: "Search for tweets created since the given timestamp"
+        x-example: "2019-04-01"
+      - name: "to"
+        in: "query"
+        required: false
+        type: "string"
+        description: "Search for tweets created before the given timestamp"
+        x-example: "2019-04-02"
+      responses:
+        200:
+          description: "Status 200"
+          schema:
+            type: "array"
+            items:
+              $ref: "#/definitions/Tweet"
+definitions:
+  Tweet:
+    type: "object"
+    required:
+    - "author"
+    - "content"
+    - "timestamp"
+    properties:
+      tweeitId:
+        type: "string"
+        description: "A GUID"
+      author:
+        type: "string"
+      timestamp:
+        type: "string"
+        format: "date-time"
+      content:
+        type: "string"
+  Prediction:
+    type: "object"
+    required:
+    - "prediction"
+    - "tweetId"
+    properties:
+      tweetId:
+        type: "string"
+      prediction:
+        type: "boolean"
