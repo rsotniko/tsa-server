@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8cc5c5e2-edc7-49ef-8ef2-0f8d8dec181e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/__init__.py" afterDir="false" />
-    </list>
+    <list default="true" id="8cc5c5e2-edc7-49ef-8ef2-0f8d8dec181e" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -424,7 +421,14 @@
       <option name="project" value="LOCAL" />
       <updated>1554659278289</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="some correction">
+      <created>1556475957478</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1556475957478</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -505,7 +509,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="idea files added" />
     <MESSAGE value="added twitter api stuff" />
-    <option name="LAST_COMMIT_MESSAGE" value="added twitter api stuff" />
+    <MESSAGE value="some correction" />
+    <option name="LAST_COMMIT_MESSAGE" value="some correction" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
