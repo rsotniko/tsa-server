@@ -42,6 +42,17 @@ def create_app(config_name):
             return response
         return None
 
+    @app.route('/prediction', methods=['POST'])
+    def insert_data_to_analyze():
+        if request.method == "POST":
+            store.tweets = request.get_json()
+            response = jsonify({
+                'result': 'OK'
+            })
+            response.status_code = 201
+            return response
+        return None
+
     @app.route('/realTweets', methods=['GET'])
     def get_search_results():
         if request.method == "GET":
