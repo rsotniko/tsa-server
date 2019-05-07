@@ -3,12 +3,7 @@ import json
 from flask import request, jsonify
 from flask_api import FlaskAPI
 import uuid
-import tensorflow as tf
-from tf.tfmodel import KerasModelHolder
 
-keras_model = KerasModelHolder('../tsa.h5').load().model
-keras_model.summary()
-graph = tf.get_default_graph()
 
 def create_app(config_name):
     from twitter.model import TweetStore
@@ -18,7 +13,7 @@ def create_app(config_name):
     app = FlaskAPI(__name__, instance_relative_config=True)
     store = TweetStore()
     twitter_api_client = TwitterApiClient()
-    tweet_analyzer = TweetAnalyzer(keras_model)
+    tweet_analyzer = TweetAnalyzer()
 
     @app.route('/keras/summary', methods=['GET'])
     def get_keras_model_summary():
