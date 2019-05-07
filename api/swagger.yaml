@@ -144,9 +144,10 @@ definitions:
     type: "object"
     required:
     - "prediction"
-    - "tweetId"
+    - "tweet"
     properties:
-      tweetId:
-        type: "string"
+      tweet:
+        type:
+           $ref: "#/definitions/Tweet"
       prediction:
         type: "boolean"

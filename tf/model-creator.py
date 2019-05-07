@@ -18,6 +18,7 @@ from keras.models import Sequential
 from keras.layers import Dense, Activation, Embedding, Dropout, SpatialDropout1D
 from keras.layers import LSTM, Conv1D, MaxPooling1D
 from sklearn.model_selection import train_test_split
+import pickle
 
 print('reading CSV')
 
@@ -70,7 +71,7 @@ Yt, maxlen = wrap_array(Yt, maxlen)
 Y_validate, maxlen = wrap_array(Y_validate, maxlen)
 
 print('build model')
-
+print('maxlen: ' + str(maxlen))
 batch_size = 256
 
 model = Sequential()
@@ -109,3 +110,5 @@ else:
     print('Positive')
 
 model.save('../tsa.h5')
+with open('../tokenizer.pickle', 'wb') as handle:
+    pickle.dump(tokenizer, handle, protocol=pickle.HIGHEST_PROTOCOL)
