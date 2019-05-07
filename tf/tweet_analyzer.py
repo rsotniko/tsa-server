@@ -8,6 +8,7 @@ import tensorflow as tf
 keras_model = load_model("../tsa.h5")
 graph = tf.get_default_graph()
 
+
 class TweetAnalyzer:
 
 	def __init__(self):

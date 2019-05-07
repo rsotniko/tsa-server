@@ -1,6 +1,13 @@
 import numpy as np  # linear algebra
 import pandas as pd  # data processing, CSV file I/O (e.g. pd.read_csv)
 import numpy as np
+from keras.preprocessing.sequence import pad_sequences
+from keras.preprocessing.text import Tokenizer
+from keras.models import Sequential
+from keras.layers import Dense, Activation, Embedding, Dropout, SpatialDropout1D
+from keras.layers import LSTM, Conv1D, MaxPooling1D
+from sklearn.model_selection import train_test_split
+import pickle
 
 # for reproducibility
 from numpy.random import seed
@@ -11,14 +18,6 @@ seed(random_seed)
 random_seed += 1
 set_random_seed(random_seed)
 random_seed += 1
-
-from keras.preprocessing.sequence import pad_sequences
-from keras.preprocessing.text import Tokenizer
-from keras.models import Sequential
-from keras.layers import Dense, Activation, Embedding, Dropout, SpatialDropout1D
-from keras.layers import LSTM, Conv1D, MaxPooling1D
-from sklearn.model_selection import train_test_split
-import pickle
 
 print('reading CSV')
 
@@ -55,6 +54,8 @@ Xt = Xt[:-validation_size]
 Yt = Yt[:-validation_size]
 
 maxlen = 0
+
+
 def wrap_array(x, maxlen):
     for index in range(len(x)):
         xx = x[index]
