@@ -1,0 +1,60 @@
+C:\Users\rsotniko\PycharmProjects\tsa-server\venv\Scripts\python.exe C:/Users/rsotniko/PycharmProjects/tsa-server/tf/model-creator.py
+Using TensorFlow backend.
+reading CSV
+parsing CSV
+build words map
+build model
+WARNING:tensorflow:From C:\Users\rsotniko\PycharmProjects\tsa-server\venv\lib\site-packages\tensorflow\python\framework\op_def_library.py:263: colocate_with (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Colocations handled automatically by placer.
+WARNING:tensorflow:From C:\Users\rsotniko\PycharmProjects\tsa-server\venv\lib\site-packages\keras\backend\tensorflow_backend.py:3445: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #   
+=================================================================
+embedding_1 (Embedding)      (None, 118, 128)          6400000   
+_________________________________________________________________
+spatial_dropout1d_1 (Spatial (None, 118, 128)          0         
+_________________________________________________________________
+conv1d_1 (Conv1D)            (None, 118, 32)           12320     
+_________________________________________________________________
+max_pooling1d_1 (MaxPooling1 (None, 59, 32)            0         
+_________________________________________________________________
+lstm_1 (LSTM)                (None, 124)               77872     
+_________________________________________________________________
+dense_1 (Dense)              (None, 1)                 125       
+_________________________________________________________________
+activation_1 (Activation)    (None, 1)                 0         
+=================================================================
+Total params: 6,490,317
+Trainable params: 6,490,317
+Non-trainable params: 0
+_________________________________________________________________
+None
+Train...
+WARNING:tensorflow:From C:\Users\rsotniko\PycharmProjects\tsa-server\venv\lib\site-packages\tensorflow\python\ops\math_ops.py:3066: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.cast instead.
+Train on 1120000 samples, validate on 478500 samples
+Epoch 1/2
+2019-05-06 17:04:03.104233: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2
+ - 1550s - loss: 0.4185 - acc: 0.8072 - val_loss: 0.3869 - val_acc: 0.8249
+Epoch 2/2
+ - 1608s - loss: 0.3665 - acc: 0.8363 - val_loss: 0.3813 - val_acc: 0.8284
+
+ 256/1500 [====>.........................] - ETA: 0s
+ 512/1500 [=========>....................] - ETA: 0s
+ 768/1500 [==============>...............] - ETA: 0s
+1024/1500 [===================>..........] - ETA: 0s
+1280/1500 [========================>.....] - ETA: 0s
+1500/1500 [==============================] - 0s 261us/step
+Test score: 0.3728085430463155
+Test accuracy: 0.8299999979337056
+Trying to predict:
+This is a presidential decree that Rada's defence committee approved and suggested MPs to support. As some MPs write, there is no agreement on a restriction of certain freedoms(frdm of assembly among them). They also want it written down that elections will take place on March 31
+
+Sentiment = 0.6709455
+Positive
+
+Process finished with exit code 0

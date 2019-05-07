@@ -1,17 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8cc5c5e2-edc7-49ef-8ef2-0f8d8dec181e" name="Default Changelist" comment="">
+    <list default="true" id="8cc5c5e2-edc7-49ef-8ef2-0f8d8dec181e" name="Default Changelist" comment="adding data and tokeni">
+      <change afterPath="$PROJECT_DIR$/model_build.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/codestyles/Default.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tf/.ipynb_checkpoints/keras-model-checkpoint.ipynb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tf/.ipynb_checkpoints/test-checkpoint.ipynb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tf/keras-model.ipynb" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/tf/model-creator.py" beforeDir="false" afterPath="$PROJECT_DIR$/tf/model-creator.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tf/test-tf.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tf/tfmodel.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tf/tokenizer-creator.py" beforeDir="false" afterPath="$PROJECT_DIR$/tf/tokenizer-creator.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tf/tweet_analyzer.py" beforeDir="false" afterPath="$PROJECT_DIR$/tf/tweet_analyzer.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -33,8 +26,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/__init__.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-476">
-              <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+            <state relative-caret-position="187">
+              <caret line="44" column="33" lean-forward="true" selection-start-line="44" selection-start-column="16" selection-end-line="44" selection-end-column="33" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
               </folding>
@@ -45,17 +38,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/api/swagger.yaml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="600">
-              <caret line="153" selection-start-line="153" selection-end-line="153" />
+            <state relative-caret-position="345">
+              <caret line="69" column="2" selection-start-line="69" selection-start-column="2" selection-end-line="73" selection-end-column="29" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tf/model-creator.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="617">
-              <caret line="115" lean-forward="true" selection-start-line="115" selection-end-line="115" />
+            <state relative-caret-position="629">
+              <caret line="55" column="3" lean-forward="true" selection-start-line="55" selection-end-line="55" selection-end-column="6" />
               <folding>
                 <element signature="e#0#36#0" expanded="true" />
               </folding>
@@ -75,11 +68,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/tf/tweet_analyzer.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+            <state relative-caret-position="136">
+              <caret line="8" selection-start-line="8" selection-end-line="8" selection-end-column="30" />
               <folding>
                 <element signature="e#0#46#0" expanded="true" />
               </folding>
@@ -130,10 +123,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="2178" />
-    <option name="y" value="118" />
-    <option name="width" value="1358" />
-    <option name="height" value="830" />
+    <option name="x" value="-9" />
+    <option name="y" value="-9" />
+    <option name="width" value="1938" />
+    <option name="height" value="1098" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -149,16 +142,6 @@
             <path>
               <item name="tsa-server" type="b2602c69:ProjectViewProjectNode" />
               <item name="tsa-server" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tsa-server" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tsa-server" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tsa-server" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tsa-server" type="462c0819:PsiDirectoryNode" />
-              <item name="tf" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -467,20 +450,26 @@
       <option name="project" value="LOCAL" />
       <updated>1557233872497</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="some cosmetics">
+      <created>1557234085854</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1557234085854</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1912" y="-8" width="1936" height="1066" extended-state="6" />
-    <editor active="true" />
+    <frame x="-7" y="-7" width="1550" height="848" extended-state="6" />
     <layout>
-      <window_info id="Structure" order="0" sideWeight="0.5207439" side_tool="true" visible="true" weight="0.15753424" />
+      <window_info id="Structure" order="0" sideWeight="0.5228216" side_tool="true" visible="true" weight="0.19762062" />
       <window_info id="Favorites" order="1" side_tool="true" />
       <window_info id="Repositories" order="2" sideWeight="0.49791667" weight="0.32980832" />
-      <window_info active="true" content_ui="combo" id="Project" order="3" sideWeight="0.4792561" visible="true" weight="0.15753424" />
+      <window_info active="true" content_ui="combo" id="Project" order="3" sideWeight="0.47717842" visible="true" weight="0.19762062" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32960895" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.25080386" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32681563" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49966952" weight="0.39764202" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -552,7 +541,8 @@
     <MESSAGE value="new model generation added" />
     <MESSAGE value="completing server" />
     <MESSAGE value="thing is running" />
-    <option name="LAST_COMMIT_MESSAGE" value="thing is running" />
+    <MESSAGE value="some cosmetics" />
+    <option name="LAST_COMMIT_MESSAGE" value="some cosmetics" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -793,16 +783,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-476">
-          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tf/test-tf.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -817,23 +797,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api/swagger.yaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="153" selection-start-line="153" selection-end-line="153" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tf/tweet_analyzer.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
-          <folding>
-            <element signature="e#0#46#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tf/tokenizer-creator.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="107">
@@ -844,12 +807,46 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/keras/preprocessing/text.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/tf/model-creator.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="617">
-          <caret line="115" lean-forward="true" selection-start-line="115" selection-end-line="115" />
+        <state relative-caret-position="629">
+          <caret line="55" column="3" lean-forward="true" selection-start-line="55" selection-end-line="55" selection-end-column="6" />
           <folding>
             <element signature="e#0#36#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="44" column="33" lean-forward="true" selection-start-line="44" selection-start-column="16" selection-end-line="44" selection-end-column="33" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/swagger.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="69" column="2" selection-start-line="69" selection-start-column="2" selection-end-line="73" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tf/tweet_analyzer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" selection-start-line="8" selection-end-line="8" selection-end-column="30" />
+          <folding>
+            <element signature="e#0#46#0" expanded="true" />
           </folding>
         </state>
       </provider>

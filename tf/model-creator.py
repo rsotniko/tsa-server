@@ -64,6 +64,7 @@ def wrap_array(x, maxlen):
         x[index] = np.array(xx)
     return np.array(x), maxlen
 
+
 X, maxlen = wrap_array(X, maxlen)
 Xt, maxlen = wrap_array(Xt, maxlen)
 X_validate, maxlen = wrap_array(X_validate, maxlen)
